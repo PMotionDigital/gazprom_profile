@@ -342,16 +342,16 @@
   box-sizing: border-box; }
 
 @font-face {
-  font-family: 'VTB Group UI';
-  src: url("../fonts/VTBGroupUI-Regular.woff") format("woff"), url("../fonts/VTBGroupUI-Regular.woff2") format("woff2");
+  font-family: 'Cera CY';
+  src: url("../fonts/Cera-Regular-Web.woff") format("woff"), url("../fonts/Cera-Regular-Web.woff2") format("woff2"), url("../fonts/Cera-Regular-Web.ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'VTB Group UI';
-  src: url("../fonts/VTBGroupUI-Light.woff") format("woff"), url("../fonts/VTBGroupUI-Light.woff2") format("woff2");
-  font-weight: 100;
+  font-family: 'Cera CY';
+  src: url("../fonts/Cera-Bold-Web.woff") format("woff"), url("../fonts/Cera-Bold-Web.woff2") format("woff2"), url("../fonts/Cera-Bold-Web.ttf") format("ttf");
+  font-weight: bold;
   font-style: normal;
   font-display: swap; }
 
@@ -360,7 +360,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  font-family: 'VTB Group UI', sans-serif; }
+  font-family: 'Cera CY', sans-serif; }
 
 button {
   outline: none; }
@@ -381,7 +381,7 @@ button {
   background: linear-gradient(90deg, #0037FF 0%, #0085FF 75%); }
   .button.type-2 {
     background: #fff;
-    color: #002BAB; }
+    color: #0057B6; }
 
 img {
   max-width: 100%;
@@ -499,13 +499,10 @@ select:active {
 h1, h2, h3, h4, h5 {
   font-weight: normal; }
 
-.header-top {
-  background-color: #fff;
-  padding: 1rem 0; }
-
-.header-top_title {
-  color: #002BAB;
-  font-size: 1.96rem; }
+.main-header_top {
+  background-color: #0057B6;
+  color: #fff;
+  padding: .5rem; }
 
 * {
   margin: 0;
@@ -513,16 +510,16 @@ h1, h2, h3, h4, h5 {
   box-sizing: border-box; }
 
 @font-face {
-  font-family: 'VTB Group UI';
-  src: url("../fonts/VTBGroupUI-Regular.woff") format("woff"), url("../fonts/VTBGroupUI-Regular.woff2") format("woff2");
+  font-family: 'Cera CY';
+  src: url("../fonts/Cera-Regular-Web.woff") format("woff"), url("../fonts/Cera-Regular-Web.woff2") format("woff2"), url("../fonts/Cera-Regular-Web.ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'VTB Group UI';
-  src: url("../fonts/VTBGroupUI-Light.woff") format("woff"), url("../fonts/VTBGroupUI-Light.woff2") format("woff2");
-  font-weight: 100;
+  font-family: 'Cera CY';
+  src: url("../fonts/Cera-Bold-Web.woff") format("woff"), url("../fonts/Cera-Bold-Web.woff2") format("woff2"), url("../fonts/Cera-Bold-Web.ttf") format("ttf");
+  font-weight: bold;
   font-style: normal;
   font-display: swap; }
 
@@ -531,7 +528,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  font-family: 'VTB Group UI', sans-serif; }
+  font-family: 'Cera CY', sans-serif; }
 
 .main-slider {
   color: #262C40; }
@@ -574,6 +571,9 @@ body {
       font-size: 32px;
       font-weight: 700; }
 
+.select-block_sub {
+  display: none; }
+
 .main-footer {
   background-color: #fff;
   padding: 3.8rem 0; }
@@ -595,10 +595,6 @@ body {
   .main-footer .wrapper {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 2rem; } }
-
-@media only screen and (max-width: 1920px) {
-  html {
-    font-size: 20px; } }
 
 @media only screen and (max-width: 1440px) {
   .col-md-1 {
