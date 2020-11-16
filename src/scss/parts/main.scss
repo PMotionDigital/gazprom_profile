@@ -5,22 +5,25 @@
 }
 
 @font-face {
-    font-family: 'VTB Group UI';
-    src: url('../fonts/VTBGroupUI-Regular.woff') format('woff'),
-        url('../fonts/VTBGroupUI-Regular.woff2') format('woff2');
+    font-family: 'Cera CY';
+    src: url('../fonts/Cera-Regular-Web.woff') format('woff'),
+         url('../fonts/Cera-Regular-Web.woff2') format('woff2'),
+         url('../fonts/Cera-Regular-Web.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'VTB Group UI';
-    src: url('../fonts/VTBGroupUI-Light.woff') format('woff'),
-        url('../fonts/VTBGroupUI-Light.woff2') format('woff2');
-    font-weight: 100;
+    font-family: 'Cera CY';
+    src: url('../fonts/Cera-Bold-Web.woff') format('woff'),
+         url('../fonts/Cera-Bold-Web.woff2') format('woff2'),
+         url('../fonts/Cera-Bold-Web.ttf') format('ttf');
+    font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
+
 
 html {
     font-size: 16px;
@@ -28,6 +31,5 @@ html {
 }
 
 body {
-    background-color: $grey;
-    font-family: 'VTB Group UI', sans-serif;
+    font-family: 'Cera CY', sans-serif;
 }
