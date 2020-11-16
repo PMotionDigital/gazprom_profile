@@ -1,0 +1,30 @@
+.block-search {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.block-search_input {
+    background: none;
+    padding: 0;
+    &::placeholder {
+        color: $blue;
+    }
+}
+
+.block-search_submit {
+    display: none;
+}
+
+.block-search_btn {
+    order: 0;
+    margin-right: 1rem;
+    width: 1rem;
+    height: 1rem;
+    background: url(../img/icons/search.svg) center center no-repeat;
+    background-size: contain;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

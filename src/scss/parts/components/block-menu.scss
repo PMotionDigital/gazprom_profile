@@ -1,0 +1,31 @@
+.menu {
+    display: flex;
+    @include clear_tag_li;
+}
+
+.menu-item {
+    padding-right: 1.5rem;
+    position: relative;
+    display: inline-block;
+    &:not(:last-child) {
+        margin-right: 2rem;
+    }
+    a {
+        @include clear_tag_a;
+        font-size: 1.15rem;
+    }
+
+    // стили для пункта меню, у которого есть подменю
+    &--has-sub {
+        &:after {
+            content: url(../img/icons/arrow.svg);
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

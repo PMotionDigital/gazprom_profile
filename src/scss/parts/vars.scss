@@ -1,6 +1,8 @@
 // colors
 
 $blue:#0057B6;
+$purple : #4A0F72;
+
 $blue2: #19AEDE;
 $white : #fff;
 $black : #2F3441;
@@ -8,4 +10,15 @@ $grey: #F4F8FB;
 $grey2: #D4D7DF;
 $green: #28BFAD;
 
-// margins
+
+
+// mixins
+
+@mixin clear_tag_li {
+    list-style: none;
+}
+
+@mixin clear_tag_a {
+    text-decoration: none;
+    color: $black;
+}

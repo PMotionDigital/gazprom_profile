@@ -1,5 +1,54 @@
+// стили для верхней части шапки
 .main-header_top {
     background-color: $blue; 
     color: $white;  
     padding: .5rem;
+
+    // переписываем стили для блока с выпадающим меню на белую стрелку
+    .menu-item {
+        &--has-sub {
+            &:after {
+                filter: invert(1);
+            }
+        }
+    }
+}
+
+.main-header_top-menu {
+    display: flex;
+    a {
+        display: block;
+        @include clear_tag_a;
+        color: $white;
+        &:not(:last-child) {
+            margin-right: 2rem;
+            text-decoration: none;
+        }
+    }
+}
+
+// стили для нижней части шапки
+.main-header_bot {
+    padding: .8rem 0;
+}
+
+// стили для главной навигации сайта
+.main-nav {
+    
+}
+
+// стили для блока с поиском в шапке
+
+.header-meta {
+    .block-search {
+        padding-right: 1rem;
+        margin-right: 1rem;
+        border-right: 1px solid $blue;
+    }
+}
+
+.header-meta_bot {
+    .button {
+        background-image: url(../img/icons/bot-icon.svg);
+    }
 }

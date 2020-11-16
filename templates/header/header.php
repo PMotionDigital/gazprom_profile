@@ -12,7 +12,7 @@
         <header class="main-header">
             <div class="main-header_top">
                 <div class="wrapper dis-flex flex-wrap-wrap">
-                    <div class="col-lg-3 col-lm-12 col-xs-12">
+                    <div class="col-lg-2 col-lm-12 col-xs-12">
                         <div class="select-block menu-item menu-item--has-sub">
                             <div class="select-block_curent">Новый КИП</div>
                             <div class="select-block_sub">
@@ -25,15 +25,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-9 col-lm-12 col-xs-12">
+                    <div class="main-header_top-menu col-lg-10 col-lm-12 col-xs-12">
                         <a href="#">Адресная книга</a>
-                        <a href="#">Адресная книга</a>
-                        <a href="#">Адресная книга</a>
+                        <a href="#">Личный кабинет</a>
+                        <a href="#">Подразделения</a>
                     </div>
                 </div>
             </div>
-            <div class="main-header_bot wrapper dis-flex flex-wrap-wrap">
-                <div class="logo col-lg-3 col-lm-12 col-xs-12">
+            <div class="main-header_bot wrapper dis-flex flex-wrap-wrap align-items-center">
+                <div class="logo col-lg-2 col-lm-12 col-xs-12">
                     <a href="#">
                         <img src="../../dist/img/logo.svg">
                     </a>
@@ -47,30 +47,39 @@
                         </li>
                         <li class="menu-item menu-item--has-sub">
                             <a href="#">
-                                О банке
+                            Сервисы
                             </a>
                         </li>
                         <li class="menu-item menu-item--has-sub">
                             <a href="#">
-                                О банке
+                            Сотруднику
                             </a>
                         </li>
                         <li class="menu-item menu-item--has-sub">
                             <a href="#">
-                                О банке
+                            Медиа
                             </a>
                         </li>
                         <li class="menu-item menu-item--has-sub">
                             <a href="#">
-                                О банке
-                            </a>
-                        </li>
-                        <li class="menu-item menu-item--has-sub">
-                            <a href="#">
-                                О банке
+                            Ещё
                             </a>
                         </li>
                     </ul>
+                </div>
+                <div class="header-meta col-lg-4 col-lm-12 col-xs-12 dis-flex justify-content-end">
+                    <div class="block-search">
+                        <div class="block-search_btn"></div>
+                        <form>
+                            <input class="block-search_input" aria-label="Поиск по сайту" type="search" name="search" placeholder="Поиск" value="" autocomplete="off">
+                            <input class="block-search_submit" type="submit" value="Найти">
+                        </form>
+                    </div>
+                    <div class="header-meta_bot">
+                        <button class="button type-2 purple icon">
+                            Помощник
+                        </button>
+                    </div>
                 </div>
             </div>
         </header>
