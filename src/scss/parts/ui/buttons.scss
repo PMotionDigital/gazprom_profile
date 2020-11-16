@@ -11,14 +11,15 @@ button {
     display: inline-block;
     color: $white;
     font-size: inherit;
-    padding: 1rem 3.75rem;
+    padding: .75rem 1.5rem;
     border: none;
     transition: all .25s ease-in-out;
     text-decoration: none;
     cursor: pointer;
-    border-radius: 0.3rem;
-    font-size: .85rem;
-    background: linear-gradient(90deg, #0037FF 0%, #0085FF 75%);
+    border-radius: 0.38rem;
+    font-size: 1.13rem;
+    background: $blue;
+    font-weight: 700;
     &.type-2 {
         background: $white;
         color: $blue;
