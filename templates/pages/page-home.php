@@ -1,3 +1,4 @@
-<?php include '../header/header.php'; ?>
-
-<?php include '../footer/footer.php'; ?>
+<?php 
+include '../header/header.php'; 
+include '../components/block-main-slider.php'; 
+include '../footer/footer.php'; ?>
