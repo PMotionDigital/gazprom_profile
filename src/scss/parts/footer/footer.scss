@@ -1,0 +1,33 @@
+.main-footer {
+    background-color: $white;
+    padding: 3.8rem 0;
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(4,4fr);
+        grid-gap: 1.5rem;
+    }
+
+    .site-logo {
+        width: 9.1rem;
+    }
+}
+
+.footer-widget_nav {
+    ul {
+        list-style: none;
+        a {
+            text-decoration: none;
+            color: $black;
+            font-size: .8rem;
+        }
+    }
+}
+
+@media only screen and(max-width: 768px) {
+    .main-footer {
+        .wrapper {
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 2rem;
+        }
+    }
+}
