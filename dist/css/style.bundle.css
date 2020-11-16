@@ -1,7 +1,7 @@
 .wrapper {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1250px; }
+  max-width: 1280px; }
   .wrapper--big {
     max-width: 1680px; }
 
@@ -363,6 +363,9 @@ body {
   background-color: #F4F8FB;
   font-family: 'VTB Group UI', sans-serif; }
 
+ul {
+  list-style: none; }
+
 button {
   outline: none; }
   button:hover, button:focus {
@@ -535,238 +538,56 @@ body {
   background-color: #F4F8FB;
   font-family: 'VTB Group UI', sans-serif; }
 
-.block-difficulty {
-  display: flex;
-  align-items: center; }
+ul {
+  list-style: none; }
 
-.block-difficulty_title {
-  margin-right: 1rem;
-  color: #002BAB;
-  font-size: 1.15rem; }
-
-.block-dots {
-  display: flex; }
-
-.block-dots_item {
-  width: .5rem;
-  height: .5rem;
-  border-radius: 100%;
-  background-color: rgba(25, 174, 222, 0.3); }
-  .block-dots_item:not(:last-child) {
-    margin-right: .5rem; }
-  .block-dots_item--active {
-    background-color: #19aede; }
-
-.block-list {
-  margin: 1rem 0; }
-
-.block-list_item {
-  padding-left: 5rem;
-  position: relative;
-  display: flex;
-  align-items: center; }
-  .block-list_item:not(:last-child) {
-    margin-bottom: 4rem; }
-
-.block-list_item_counter {
-  position: absolute;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #19AEDE;
-  width: 2.5rem;
-  height: 2.5rem;
-  border: 1px solid #19AEDE;
-  border-right: 1px solid;
-  border-left-color: transparent;
-  border-bottom-color: transparent;
-  border-radius: 100%;
-  transform: rotate(45deg) translateX(-0.5rem) translateY(0.5rem);
-  font-size: 1rem;
-  font-weight: 100; }
-  .block-list_item_counter span {
-    transform: rotate(-45deg) translateX(-0.1rem); }
-
-.lesson-item {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 1.5rem 2.3rem;
-  border-radius: .5rem;
-  background-color: #fff; }
-  .lesson-item:not(:last-child) {
-    margin-bottom: 1.5rem; }
-
-.lesson-item_desc h3 {
-  color: #002BAB; }
-
-.lesson-item_meta {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end; }
-  .lesson-item_meta .lesson-delay {
-    padding: .2rem 0rem .2rem 1.1rem; }
-
-.lesson-counter {
-  border-radius: .5rem;
-  background-color: rgba(0, 43, 171, 0.05);
-  color: #002BAB;
-  font-size: .65rem;
-  padding: .2rem 1.5rem; }
-
-.lesson-delay {
-  color: #002BAB;
-  font-size: .65rem;
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding-left: 1.2rem; }
-  .lesson-delay:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 1rem;
-    height: 1rem;
-    background: url(../img/icons/clock.svg) center center no-repeat;
-    top: auto;
-    bottom: auto; }
-
-@media only screen and (max-width: 768px) {
-  .lesson-item {
-    padding: 2rem; }
-    .lesson-item .button {
-      margin-top: 2rem; }
-  .lesson-item_meta {
-    display: block;
-    margin-top: 1.5rem; } }
-
-.first-step {
-  background: linear-gradient(90deg, #1134B5 0%, #2353E0 75%);
-  color: #fff;
-  text-align: center;
-  border-radius: .5rem;
-  padding: 5rem 0; }
-  .first-step .section-title {
-    margin-bottom: 1.5rem; }
-  .first-step .button {
-    margin-top: 3rem; }
-
-.first-step_desc {
-  font-size: 1.25rem; }
-
-.page-content {
-  margin-top: 3.8rem; }
-
-.content-block {
-  margin-bottom: 4rem; }
-  .content-block h2:first-child {
-    margin-bottom: 3.5rem; }
-  .content-block table {
-    padding: 0;
-    cellspacing: 0px; }
-    .content-block table tr:first-child th {
-      text-align: left;
-      font-weight: normal;
-      color: #002BAB;
-      font-size: 1.1rem;
-      border-top: 1px solid #D4D7DF;
-      padding: 2rem 0; }
-    .content-block table td {
-      border-top: 1px solid #D4D7DF;
-      padding: 2rem 0; }
-
-.content-block_example {
-  margin: 1.5rem 0;
-  padding: 2rem;
-  border-radius: .5rem;
-  background-color: #fff;
-  color: #002BAB; }
-
-.content-block_note {
-  padding: 1.5rem 2rem;
-  border-radius: .5rem;
-  color: #fff;
-  background: linear-gradient(90deg, #1134B5 0%, #2353E0 75%);
-  font-size: 1.5rem; }
-  .content-block_note strong {
-    color: #19AEDE;
-    font-weight: normal; }
-
-.content-block_list-table {
-  margin: 2rem 0; }
-
-.content-block_list-table_item {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  padding: 2rem 0;
-  border-top: 1px solid #D4D7DF; }
-  .content-block_list-table_item .content-block_list-table_left h4 {
-    font-size: 1.45rem;
-    color: #002BAB; }
-  .content-block_list-table_item .content-block_list-table_left p {
-    font-size: 1.25rem; }
-  .content-block_list-table_item .content-block_list-table_right h5 {
-    color: #002BAB; }
-
-.block-review {
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  grid-gap: 1rem; }
-  .block-review .block-review_item:not(:last-child) {
-    margin-bottom: 1.5rem; }
-  .block-review .page-lesson_review-title {
-    grid-column: 1/3;
-    margin-bottom: 1rem; }
-
-.stars-counter_point {
-  margin-right: .5rem; }
-
-.block-review_item-title {
+.news-section_title {
+  font-size: 1.5rem;
+  font-weight: bold;
   margin-bottom: 1.5rem; }
 
-.stars-counter {
-  display: flex;
-  align-items: center; }
-  .stars-counter .start-counter_item {
-    cursor: pointer; }
-    .stars-counter .start-counter_item path {
-      transition: all .1s ease-in-out; }
-    .stars-counter .start-counter_item:not(:last-child) {
-      margin-right: 1rem; }
-    .stars-counter .start-counter_item--active path, .stars-counter .start-counter_item:hover path {
-      fill: #28BFAD; }
+.news-section_list {
+  grid-gap: 2.5rem;
+  margin-bottom: 1.5rem; }
 
-.sidebar-widget {
-  padding: 2rem;
-  border-radius: .5rem;
-  background-color: #fff; }
-  .sidebar-widget:not(:last-child) {
-    margin-bottom: 2rem; }
-  .sidebar-widget h3 {
-    font-size: .85rem;
-    margin-bottom: 1rem; }
-  .sidebar-widget .block-review {
-    grid-template-columns: repeat(1, 1fr); }
-  .sidebar-widget .block-review_item-title {
-    margin-bottom: .5rem;
-    font-size: .85rem; }
-  .sidebar-widget .start-counter_item {
-    width: 1.35rem;
-    height: 1.35rem; }
-    .sidebar-widget .start-counter_item:not(:last-child) {
-      margin-right: .5rem; }
-    .sidebar-widget .start-counter_item svg {
-      width: 100%;
-      height: 100%; }
+.news-section_button {
+  display: block;
+  width: max-content;
+  margin-left: auto;
+  text-decoration: none;
+  font-size: 1.125rem;
+  color: #0057B6; }
 
-.main-socials {
-  display: flex; }
-  .main-socials a {
-    text-decoration: none; }
-    .main-socials a:not(:last-child) {
-      margin-right: .85rem; }
+.news-section_item a {
+  text-decoration: none;
+  color: inherit; }
+
+.news-item_image {
+  border-radius: .4rem;
+  overflow: hidden;
+  margin-bottom: 1rem; }
+  .news-item_image img {
+    width: 100%;
+    height: auto; }
+
+.news-section_info {
+  padding-right: 1rem; }
+
+.news-item_date {
+  font-size: .875rem;
+  font-weight: bold;
+  color: #7C8793;
+  margin-bottom: .5rem; }
+
+.news-item_title {
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem; }
+
+.news-item_desc {
+  font-size: .875rem;
+  line-height: 1.125rem; }
 
 .main-footer {
   background-color: #fff;
@@ -789,215 +610,6 @@ body {
   .main-footer .wrapper {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 2rem; } }
-
-.page-course .start-course {
-  margin-top: -2rem;
-  position: relative;
-  z-index: 1; }
-
-.page-course_hello {
-  padding: 6rem 0;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center; }
-  .page-course_hello .section-title {
-    color: #002BAB;
-    margin-bottom: 2rem; }
-
-.hello-block_desc {
-  font-size: 1.6rem;
-  margin-bottom: 2rem; }
-
-.block-questions {
-  position: relative; }
-  .block-questions .wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative; }
-    .block-questions .wrapper:before, .block-questions .wrapper:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -5vw;
-      width: calc(50% + 5vw);
-      height: 100%;
-      background: linear-gradient(90deg, #1134B5 0%, #2353E0 75%); }
-    .block-questions .wrapper:after {
-      left: auto;
-      right: -5vw;
-      transform: rotate(180deg);
-      background: #28b0fe; }
-
-.block-questions_left {
-  position: relative;
-  padding: 6rem 0;
-  padding-left: 1rem; }
-  .block-questions_left .block-list_item {
-    color: #fff;
-    font-size: 1.3rem; }
-
-.block-questions_right {
-  padding: 4rem 0;
-  position: relative;
-  overflow: hidden; }
-  .block-questions_right img {
-    position: absolute;
-    top: 0;
-    left: 5vw;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1; }
-
-.start-course .wrapper {
-  border-radius: .5rem;
-  text-align: center;
-  padding: 3rem;
-  background-color: #fff; }
-
-.start-course .start-course_desc {
-  margin-bottom: 3rem;
-  font-size: 1.2rem; }
-
-.course-desc .wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 3fr);
-  grid-gap: 0rem; }
-
-.course-desc .course-desc_item {
-  width: 75%;
-  margin: auto; }
-
-.emoji-item {
-  text-align: center; }
-  .emoji-item .emoji-item_title {
-    margin: 1rem 0;
-    color: #002BAB;
-    font-size: 1.5rem; }
-  .emoji-item .emoji-item_desc {
-    font-size: .85rem; }
-
-.lesson-list {
-  margin: 4rem 0; }
-  .lesson-list .section-title {
-    text-align: center;
-    color: #002BAB; }
-
-@media only screen and (max-width: 768px) {
-  .block-questions .wrapper:before {
-    width: 100%;
-    left: 0; }
-  .block-questions .wrapper:after {
-    content: none; }
-  .course-desc .wrapper {
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 5rem; }
-  .start-course .wrapper {
-    padding: 1rem; } }
-
-.lesson-start {
-  height: 73vh;
-  position: relative; }
-
-.lesson-start_desc {
-  position: relative;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  max-height: 100%;
-  padding-bottom: 3rem; }
-  .lesson-start_desc:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: -5vw;
-    width: calc(100% + 5vw);
-    height: 50%;
-    background: linear-gradient(180deg, rgba(4, 40, 138, 0.0001) 0%, #04288A 100%); }
-  .lesson-start_desc .section-title,
-  .lesson-start_desc .block-difficulty {
-    position: relative;
-    z-index: 1; }
-  .lesson-start_desc .block-difficulty {
-    margin-top: 1.5rem; }
-  .lesson-start_desc .block-difficulty_title {
-    color: #fff; }
-
-.lesson-start_bg {
-  position: absolute;
-  top: 0;
-  left: -5vw;
-  width: calc(100% + 5vw);
-  height: 100%; }
-  .lesson-start_bg img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
-
-.lesson-start_list {
-  max-height: 100%; }
-
-.lesson-start_list_title {
-  padding: 1.75rem 1rem;
-  color: #002BAB;
-  font-size: 1.5rem; }
-
-.lesson-list-scroll {
-  height: calc(100% - 5.7rem);
-  width: calc(100% + 5vw);
-  overflow-y: scroll;
-  overflow-x: hidden; }
-  .lesson-list-scroll::-webkit-scrollbar {
-    width: 6px; }
-  .lesson-list-scroll::-webkit-scrollbar-thumb {
-    border-width: 1px 1px 1px 2px;
-    border-color: #fafafa;
-    background-color: #444; }
-  .lesson-list-scroll::-webkit-scrollbar-thumb:hover {
-    border-width: 1px 1px 1px 2px;
-    border-color: #fafafa;
-    background-color: #373A3C; }
-  .lesson-list-scroll::-webkit-scrollbar-track {
-    border-width: 0; }
-
-.lesson-list-scroll_item {
-  padding: 1.75rem 1rem;
-  position: relative;
-  display: block;
-  text-decoration: none; }
-  .lesson-list-scroll_item:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -5vw;
-    width: calc(100% + 5vw);
-    height: 100%;
-    background: linear-gradient(90deg, #1134B5 0%, #2353E0 75%);
-    opacity: 0;
-    transition: all .25s ease-in-out;
-    z-index: -1; }
-  .lesson-list-scroll_item--active, .lesson-list-scroll_item:hover {
-    color: #fff; }
-    .lesson-list-scroll_item--active:after, .lesson-list-scroll_item:hover:after {
-      opacity: 1; }
-    .lesson-list-scroll_item--active .lesson-delay, .lesson-list-scroll_item:hover .lesson-delay {
-      color: #fff; }
-
-.lesson-list-scroll_item_title {
-  margin-bottom: .75rem; }
-
-.page-lesson_task h2 {
-  margin-bottom: 3.5rem; }
-
-@media only screen and (max-width: 1920px) {
-  html {
-    font-size: 20px; } }
 
 @media only screen and (max-width: 1440px) {
   .col-md-1 {
